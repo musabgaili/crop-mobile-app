@@ -1,0 +1,66 @@
+name: cropsense
+description: "Cropsense Farm Worker"
+
+publish_to: "none"
+
+version: 1.0.1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  flutter_native_splash: ^2.2.19
+  syncfusion_flutter_charts: ^25.2.6
+  intl: ^0.18.1
+  fl_chart: ^0.62.0
+  http: ^0.13.6
+  flutter_riverpod: ^2.3.7
+  shared_preferences: ^2.2.2
+  percent_indicator: ^4.2.3
+
+flutter_native_splash:
+  color: "#00DE6A"
+  # image: assets/images/Logo 1.png
+  # branding: assets/images/1716812669905.png
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+flutter:
+  uses-material-design:
+    true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/images/icons/
+    - assets/images/icons/v2/
+
+  fonts:
+    - family: Saken
+      fonts:
+        - asset: assets/fonts/saken.ttf
+    - family: Ubuntu
+      fonts:
+        - asset: assets/fonts/Ubuntu/Ubuntu-Regular.ttf
+        - asset: assets/fonts/Ubuntu/Ubuntu-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Ubuntu/Ubuntu-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Ubuntu/Ubuntu-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Ubuntu/Ubuntu-Bold.ttf
+          weight: 700
